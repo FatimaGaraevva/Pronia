@@ -155,11 +155,16 @@ wwwroot\assets\images\website-images\2-2-370x270.webp
 wwwroot\assets\images\website-images\2-2-70x78.png
 wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\3.png
+wwwroot\assets\images\website-images\blue.jpg
 wwwroot\assets\images\website-images\car.png
 wwwroot\assets\images\website-images\card.png
 wwwroot\assets\images\website-images\dark.png
+wwwroot\assets\images\website-images\gul.jpg
 wwwroot\assets\images\website-images\quotation.png
+wwwroot\assets\images\website-images\nargisus.jpg
+wwwroot\assets\images\website-images\Red_rose.jpg
 wwwroot\assets\images\website-images\service.png
+wwwroot\assets\images\website-images\tulipa.jpg
 wwwroot\assets\js\main.js
 wwwroot\assets\js\plugins.min.js
 wwwroot\assets\js\plugins\ion.rangeSlider.min.js

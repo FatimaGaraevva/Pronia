@@ -629,6 +629,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\3.png"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\Red_rose.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\Red_rose.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\blue.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\blue.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\car.png",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\car.png"
     },
@@ -641,12 +649,24 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\dark.png"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\gul.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\gul.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\nargisus.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\nargisus.jpg"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\quotation.png",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\quotation.png"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\service.png",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\service.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\tulipa.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\tulipa.jpg"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\js\\main.js",
