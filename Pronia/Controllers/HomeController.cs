@@ -14,54 +14,20 @@ namespace Pronia.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            //List<Slide> slides = new List<Slide>
-            //{
-            //    new Slide
-            //    {
-            //        Title="Basliq 1",
-            //        Subtitle="Komekci basliq",
-            //        Description="Nergiz gulu",
-            //        Image="1-1-524x617.png",
-            //        Order=1,
-            //        CreateAt=DateTime.Now
-            //    },
-            //    new Slide
-            //    {
-            //        Title="Basliq 2",
-            //        Subtitle="Komekci basliq2",
-            //        Description="Maviqizilgul",
-            //        Image="1-2-524x617.png",
-            //        Order=2,
-            //        CreateAt=DateTime.Now
 
-            //    },
-            //    new Slide
-            //    {
-            //        Title="Basliq 3",
-            //        Subtitle="Komekci basliq3",
-            //        Description="Yasemen",
-            //        Image="1-2-524x617.png",
-            //        Order=3,
-            //        CreateAt=DateTime.Now
-            //    }
-
-
-            //};
-            //_context.Slides.AddRange(slides);
-            //_context.SaveChanges();
 
             HomeVM homeVM = new HomeVM
             {
-                Slides =_context.Slides
+                Slides =await _context.Slides
                 .OrderBy(s => s.Order)
                 .Take(2)
-                .ToList(),
-                Products = _context.Products
+                .ToListAsync(),
+                Products =await _context.Products
                 .Take(8)
-                .Include(p => p.ProductImages.Where(pi=>pi.IsPrimary!=null))
-                .ToList()
+                .Include(p => p.ProductImages.Where(pi => pi.IsPrimary != null))
+                .ToListAsync()
 
 
             };
@@ -69,5 +35,5 @@ namespace Pronia.Controllers
 
             return View(homeVM);
         }
-    }
+    } 
 }

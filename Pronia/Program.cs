@@ -12,17 +12,21 @@ namespace Pronia
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
-                opt.UseSqlServer("server=WINDOWS-8K5SI44\\SQLEXPRESS;database=ProniaDB;trusted_connection=true;integrated security=true;TrustServerCertificate=true;");
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             }
                 );
             var app = builder.Build();
             app.UseStaticFiles();
+
+
+            app.MapControllerRoute(
+               "admin",
+               "{area=exists}/{controller=home}/{action=index}/{id?}"
+               );
+
             app.MapControllerRoute(
                 "default",
                 "{controller=home}/{action=index}/{id?}"
-
-
-
                 );
           
 
