@@ -1,5 +1,4 @@
-﻿
-@model List<Category>
+﻿@model List<Size>
 
 @{
     int count = 0;
@@ -9,8 +8,8 @@
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Categories</h4>
-                <a asp-action="create"  class=" btn btn-success">CREATED</a>
+                <h4 class="card-title">Sizes</h4>
+                <a asp-action="create" class=" btn btn-success">CREATED</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
@@ -21,9 +20,7 @@
                                 <th>
                                     Name
                                 </th>
-                                <th>
-                                    Products Count
-                                </th>
+
                                 <th>
                                     Date
                                 </th>
@@ -34,7 +31,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (Category category in Model)
+                            @foreach (Size size in Model)
                             {
                                 count++;
                                 <tr>
@@ -42,24 +39,22 @@
                                         @count
                                     </td>
                                     <td>
-                                        @category.Name
+                                        @size.Name
+                                    </td>
+                                 
+                                    <td>
+                                        @size.CreateAt
                                     </td>
                                     <td>
-                                        @category.Products.Count
-                                    </td>
-                                    <td>
-                                        @category.CreateAt
-                                    </td>
-                                    <td>
-                                        <a asp-action="update" asp-route-id="@category.Id" class="btn btn-warning"><i class="mdi mdi-pencil"></i></a>
-                                        <a asp-action ="delete" asp-route-id="@category.Id" class=" btn btn-danger"><i class="mdi mdi-delete"></i></a>
-                                        <a asp-action ="detail" asp-route-id="@category.Id" class=" btn btn-primary"><i class="mdi mdi-open-in-new"></i></a>
+                                        <a asp-action="update" asp-route-id="@size.Id" class="btn btn-warning"><i class="mdi mdi-pencil"></i></a>
+                                        <a asp-action="delete" asp-route-id="@size.Id" class=" btn btn-danger"><i class="mdi mdi-delete"></i></a>
+                                        <a asp-action="detail" asp-route-id="@size.Id" class=" btn btn-primary"><i class="mdi mdi-open-in-new"></i></a>
                                     </td>
 
                                 </tr>
                             }
-                           
-                         
+
+
                         </tbody>
                     </table>
                 </div>

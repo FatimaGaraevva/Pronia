@@ -6,76 +6,82 @@ using Pronia.Models;
 namespace Pronia.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoryController : Controller
+    public class SizeController : Controller
     {
         private readonly AppDbContext _context;
 
-        public CategoryController(AppDbContext context)
+        public SizeController(AppDbContext context)
         {
             _context = context;
         }
+
         public async Task<IActionResult> Index()
         {
-            List<Category> categories =await _context.Categories.Include(c=>c.Products).ToListAsync();
-            return View(categories);
+            List<Size> sizes = await _context.Sizes.ToListAsync();
+            return View(sizes);
         }
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Category category)
+        public async Task<IActionResult> Create(Size size )
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            bool result = await _context.Categories.AnyAsync(c => c.Name == category.Name);
+            bool result = await _context.Sizes.AnyAsync(c => c.Name == size.Name);
             if (result)
             {
-                ModelState.AddModelError(nameof(category.Name), $"{category.Name} name already exists");
+                ModelState.AddModelError(nameof(size.Name), $"{size.Name} name already exists");
                 return View();
             }
-            category.CreateAt = DateTime.Now;
-            await _context.Categories.AddAsync(category);
+            size.CreateAt = DateTime.Now;
+            await _context.Sizes.AddAsync(size);
             await _context.SaveChangesAsync();
-         
-           
+
+
             return RedirectToAction(nameof(Index));
         }
-        public async Task<IActionResult> Update(int? id) {
-            if (id is null || id<=0)
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id is null || id <= 0)
             {
                 return BadRequest();
             }
 
-            Category? category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            if (category is null)
+            Size? size = await _context.Sizes.FirstOrDefaultAsync(c => c.Id == id);
+            if (size is null)
             {
                 return NotFound();
             }
 
 
-            return View(category);
+            return View(size);
         }
         [HttpPost]
-        public async Task<IActionResult>Update(int? id,Category category)
+        public async Task<IActionResult> Update(int? id, Size size)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            bool result = await _context.Categories.AnyAsync(c => c.Name == category.Name && c.Id!=id);
+            bool result = await _context.Sizes.AnyAsync(c => size.Name == c.Name && c.Id != id);
             if (result)
             {
-                ModelState.AddModelError(nameof(category.Name), $"{category.Name} name already exists");
+                ModelState.AddModelError(nameof(size.Name), $"{size.Name} name already exists");
                 return View();
             }
 
             Category? existed = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            existed.Name = category.Name;
+            existed.Name = size.Name;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
     }
 }
+
+
+    
+
