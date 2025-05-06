@@ -243,6 +243,7 @@ wwwroot\assets\images\website-images\card.png
 wwwroot\assets\images\website-images\dark.png
 wwwroot\assets\images\website-images\gul.jpg
 wwwroot\assets\images\website-images\quotation.png
+wwwroot\assets\images\website-images\menzere.jpg
 wwwroot\assets\images\website-images\nargisus.jpg
 wwwroot\assets\images\website-images\Red_rose.jpg
 wwwroot\assets\images\website-images\service.png
