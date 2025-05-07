@@ -2,6 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Pronia.DAL;
 using Pronia.Models;
+using Pronia.Utilities.Enams;
+using Pronia.Utilities.Extensions;
+using Pronia.ViewModels;
 
 namespace Pronia.Areas.Admin.Controllers
 {
@@ -18,36 +21,75 @@ namespace Pronia.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Slide> slides = await _context.Slides.ToListAsync();
-            return View(slides);
+
+            List<GetSlideVM> slideVMs = await _context.Slides.Select(s =>
+
+                new GetSlideVM
+
+                {
+
+                    CreatedAt = s.CreateAt,
+                    Title = s.Title,
+                    Image = s.Image,
+                    Id = s.Id,
+                    Order = s.Order,
+                }
+                ).ToListAsync();
+
+            
+            return View(slideVMs);
         }
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Slide slide)
+        public async Task<IActionResult> Create(CreateSlideVM slideVM)
         {
-            if (!slide.Photo.ContentType.Contains("image/"))
+            if (!slideVM.Photo.ValidateType("image/"))
             {
-                ModelState.AddModelError(nameof(Slide.Photo), "File type is incorrect");
+                ModelState.AddModelError(nameof(CreateSlideVM.Photo), "File type is incorrect");
                 return View();
             }
-            if (slide.Photo.Length > 2*1024*1024)
+            if (slideVM.Photo.ValidateSize(FileSize.MB,1))
             {
-                ModelState.AddModelError(nameof(Slide.Photo), "File size Sholud be less than 2 mb");
+                ModelState.AddModelError(nameof(CreateSlideVM.Photo), "File size Sholud be less than 1 mb");
                 return View();
             }
-            string fileName = string.Concat(Guid.NewGuid().ToString(), slide.Photo.FileName);
-            string path = Path.Combine(_env.WebRootPath, "assets","images","website-images" , fileName);
-            FileStream fl = new FileStream(path, FileMode.Create);
-            await slide.Photo.CopyToAsync(fl);
-            slide.Image = slide.Photo.FileName;
-            //return Content(slide.Photo.FileName + "" + slide.Photo.ContentType + "" + slide.Photo.Length);
+
+            string fileName = await slideVM.Photo.CreateFileAsync( _env.WebRootPath, "assets", "images", "website-images");
+
+            Slide slide = new Slide 
+            { 
+              Title=slideVM.Title,
+              Subtitle=slideVM.Subtitle,
+              Description=slideVM.Description,
+              Order=slideVM.Order,
+              Image=fileName,
+              CreateAt=DateTime.Now
+            
+            
+            };
 
 
-            slide.CreateAt = DateTime.Now;
+           
             await _context.Slides.AddAsync(slide);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id is null || id<=0)
+            {
+                return BadRequest();
+            }
+            Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+            if (slide is null)
+            {
+                return NotFound();
+            }
+            slide.Image.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
+            _context.Remove(slide);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
