@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cw9LiyzNJpmajjpe8r1hbIOpiuoj+Xl3X+8JPj8hbP8=",
+  "Hash": "EF4jcxbhAm8tAPE+nw6Byeh6AjHKm7EXHppAB5U5HRw=",
   "Source": "Pronia",
   "BasePath": "_content/Pronia",
   "Mode": "Default",
@@ -4259,27 +4259,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1-1-310x220.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-524x617.png",
-      "SourceId": "Pronia",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\",
-      "BasePath": "_content/Pronia",
-      "RelativePath": "assets/images/website-images/1-1-524x617#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "bi0ctx63s1",
-      "Integrity": "bfHrcyaMunnUX+V9T6RgQ3ck0ENM99CkTx2DVOOyBQk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1-1-524x617.png"
-    },
-    {
       "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-570x633.jpg",
       "SourceId": "Pronia",
       "SourceType": "Discovered",
@@ -4488,27 +4467,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1-2-370x300.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-524x617.png",
-      "SourceId": "Pronia",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\",
-      "BasePath": "_content/Pronia",
-      "RelativePath": "assets/images/website-images/1-2-524x617#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "9czr9fgfw0",
-      "Integrity": "qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\1-2-524x617.png"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-570x633.jpg",
@@ -5160,6 +5118,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\quotation.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\menzere.jpg",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "assets/images/website-images/menzere#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "owu9yrh95a",
+      "Integrity": "uAIbknRT7/11Ueu8XIxkzfETm/ToowhjIUDMaqbyfho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\menzere.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\nargisus.jpg",
@@ -22820,88 +22799,6 @@
       ]
     },
     {
-      "Route": "assets/images/website-images/1-1-524x617.bi0ctx63s1.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-524x617.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "121209"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bfHrcyaMunnUX+V9T6RgQ3ck0ENM99CkTx2DVOOyBQk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 23 May 2022 07:25:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "bi0ctx63s1"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/website-images/1-1-524x617.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bfHrcyaMunnUX+V9T6RgQ3ck0ENM99CkTx2DVOOyBQk="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/website-images/1-1-524x617.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-524x617.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "121209"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bfHrcyaMunnUX+V9T6RgQ3ck0ENM99CkTx2DVOOyBQk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 23 May 2022 07:25:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bfHrcyaMunnUX+V9T6RgQ3ck0ENM99CkTx2DVOOyBQk="
-        }
-      ]
-    },
-    {
       "Route": "assets/images/website-images/1-1-570x633.arp987lwle.jpg",
       "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-570x633.jpg",
       "Selectors": [],
@@ -23718,88 +23615,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-Y/6uK7KympvSp0dA6rwwLLciMQpR1vuZ1mK/zoUXsTA="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/website-images/1-2-524x617.9czr9fgfw0.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-524x617.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "127382"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 23 May 2022 07:25:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9czr9fgfw0"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/website-images/1-2-524x617.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/website-images/1-2-524x617.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-524x617.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "127382"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 23 May 2022 07:25:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qfBQ0PDbeoh0bzsNhETgIvcnQ99KzLVCz1N12chQg8M="
         }
       ]
     },
@@ -26342,6 +26157,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-xj1/M89hBmsw67ocDJK5p5/ztbUiMqv4CrWEIUPYf7Y="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/website-images/menzere.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\menzere.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uAIbknRT7/11Ueu8XIxkzfETm/ToowhjIUDMaqbyfho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:42:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uAIbknRT7/11Ueu8XIxkzfETm/ToowhjIUDMaqbyfho="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/website-images/menzere.owu9yrh95a.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\menzere.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "127070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uAIbknRT7/11Ueu8XIxkzfETm/ToowhjIUDMaqbyfho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 04:42:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "owu9yrh95a"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/website-images/menzere.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uAIbknRT7/11Ueu8XIxkzfETm/ToowhjIUDMaqbyfho="
         }
       ]
     },

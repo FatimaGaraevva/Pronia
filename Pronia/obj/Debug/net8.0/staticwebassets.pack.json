@@ -789,10 +789,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-1-310x220.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-524x617.png",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-1-524x617.png"
-    },
-    {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-1-570x633.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-1-570x633.jpg"
     },
@@ -843,10 +839,6 @@
     {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-370x300.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-2-370x300.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-524x617.png",
-      "PackagePath": "staticwebassets\\assets\\images\\website-images\\1-2-524x617.png"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\1-2-570x633.jpg",
@@ -979,6 +971,10 @@
     {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\gul.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\website-images\\gul.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\menzere.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\website-images\\menzere.jpg"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\nargisus.jpg",

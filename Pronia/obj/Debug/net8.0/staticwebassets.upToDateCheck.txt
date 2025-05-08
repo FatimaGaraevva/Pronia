@@ -200,7 +200,6 @@ wwwroot\assets\images\website-images\1-1170x300.jpg
 wwwroot\assets\images\website-images\1-1-1820x443.jpg
 wwwroot\assets\images\website-images\1-1-270x300.jpg
 wwwroot\assets\images\website-images\1-1-310x220.jpg
-wwwroot\assets\images\website-images\1-1-524x617.png
 wwwroot\assets\images\website-images\1-1-570x633.jpg
 wwwroot\assets\images\website-images\1-1-768x546.webp
 wwwroot\assets\images\website-images\1-1-770x300.jpg
@@ -211,7 +210,6 @@ wwwroot\assets\images\website-images\1-2-120x120.webp
 wwwroot\assets\images\website-images\1-2-270x300.jpg
 wwwroot\assets\images\website-images\1-2-310x220.jpg
 wwwroot\assets\images\website-images\1-2-370x300.jpg
-wwwroot\assets\images\website-images\1-2-524x617.png
 wwwroot\assets\images\website-images\1-2-570x633.jpg
 wwwroot\assets\images\website-images\1-270x300.webp
 wwwroot\assets\images\website-images\1-3.png
@@ -243,6 +241,7 @@ wwwroot\assets\images\website-images\card.png
 wwwroot\assets\images\website-images\dark.png
 wwwroot\assets\images\website-images\gul.jpg
 wwwroot\assets\images\website-images\quotation.png
+wwwroot\assets\images\website-images\menzere.jpg
 wwwroot\assets\images\website-images\nargisus.jpg
 wwwroot\assets\images\website-images\Red_rose.jpg
 wwwroot\assets\images\website-images\service.png

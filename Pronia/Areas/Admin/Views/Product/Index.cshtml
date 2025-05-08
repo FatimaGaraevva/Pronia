@@ -1,5 +1,4 @@
-﻿
-@model List<GetSlideVM>
+﻿@model List<GetProductVM>
 
 @{
     int count = 0;
@@ -9,7 +8,7 @@
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Categories</h4>
+                <h4 class="card-title">Product</h4>
                 <a asp-action="create" class=" btn btn-success">CREATED</a>
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -22,13 +21,16 @@
                                     Image
                                 </th>
                                 <th>
-                                    Title
+                                    Name
                                 </th>
                                 <th>
-                                    Order
+                                    Price
                                 </th>
                                 <th>
-                                    Date
+                                    SKU
+                                </th>
+                                <th>
+                                    Category Name
                                 </th>
                                 <th>
                                     Settings
@@ -37,7 +39,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (GetSlideVM slideVM in Model)
+                            @foreach (GetProductVM productVM in Model)
                             {
                                 count++;
                                 <tr>
@@ -45,21 +47,24 @@
                                         @count
                                     </td>
                                     <td>
-                                     <img src="~/assets/images/website-images/@slideVM.Image" >   <img />
+                                        <img src="~/assets/images/website-images/@productVM.MainImage">   <img />
                                     </td>
                                     <td>
-                                        @slideVM.Title
+                                        @productVM.Name
                                     </td>
                                     <td>
-                                        @slideVM.Order
+                                        @productVM.Price
                                     </td>
                                     <td>
-                                        @slideVM.CreatedAt
+                                        @productVM.SKU
                                     </td>
                                     <td>
-                                        <a asp-action="update" asp-route-id="@slideVM.Id" class="btn btn-warning"><i class="mdi mdi-pencil"></i></a>
-                                        <a asp-action="delete" asp-route-id="@slideVM.Id" class=" btn btn-danger"><i class="mdi mdi-delete"></i></a>
-                                        <a asp-action="detail" asp-route-id="@slideVM.Id" class=" btn btn-primary"><i class="mdi mdi-open-in-new"></i></a>
+                                        @productVM.CategoryName
+                                    </td>
+                                    <td>
+                                        <a asp-action="update" asp-route-id="@productVM.Id" class="btn btn-warning"><i class="mdi mdi-pencil"></i></a>
+                                        <a asp-action="delete" asp-route-id="@productVM.Id" class=" btn btn-danger"><i class="mdi mdi-delete"></i></a>
+                                        <a asp-action="detail" asp-route-id="@productVM.Id" class=" btn btn-primary"><i class="mdi mdi-open-in-new"></i></a>
                                     </td>
 
                                 </tr>
