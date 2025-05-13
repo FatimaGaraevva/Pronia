@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7Z6SiLhH6DoPMMAykNRvYwCAbg0fn1QSlrE0TUZu7uY=",
+  "Hash": "2Xoui5E5B4AK1BvZffAqTsg6wjudQZgZCWlrYTA+f1k=",
   "Source": "Pronia",
   "BasePath": "_content/Pronia",
   "Mode": "Default",
@@ -5097,27 +5097,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\dark.png"
-    },
-    {
-      "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.jpg",
-      "SourceId": "Pronia",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\",
-      "BasePath": "_content/Pronia",
-      "RelativePath": "assets/images/website-images/fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "09c5dw5pt1",
-      "Integrity": "vPWJg28ZlmfYkJc8rRUOLzuCs9qcPwiFsNYWLQaynqo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\gul.jpg",
@@ -26117,88 +26096,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-yuOSJKUr0p7kHTBsA6vrPtw3DxSrZ4HSRYSuY0y9x14="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/website-images/fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.09c5dw5pt1.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59289"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vPWJg28ZlmfYkJc8rRUOLzuCs9qcPwiFsNYWLQaynqo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 16:37:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "09c5dw5pt1"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/website-images/fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vPWJg28ZlmfYkJc8rRUOLzuCs9qcPwiFsNYWLQaynqo="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/website-images/fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\Pronia\\Pronia\\wwwroot\\assets\\images\\website-images\\fd359bc5-d11d-4b3e-a0d6-e2212f2705c8nar.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "59289"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vPWJg28ZlmfYkJc8rRUOLzuCs9qcPwiFsNYWLQaynqo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 16:37:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vPWJg28ZlmfYkJc8rRUOLzuCs9qcPwiFsNYWLQaynqo="
         }
       ]
     },
