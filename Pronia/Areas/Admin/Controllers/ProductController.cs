@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.DAL;
 using Pronia.Models;
@@ -9,6 +10,8 @@ using Pronia.ViewModels;
 namespace Pronia.Areas.Admin.Controllers
 {
     [Area("admin")]
+    [Authorize(Roles ="Admin")]
+  
     public class ProductController : Controller
     {
         private readonly AppDbContext _context;
@@ -33,6 +36,7 @@ namespace Pronia.Areas.Admin.Controllers
             }).ToListAsync();
             return View(productsVMs);
         }
+        
         public async Task<IActionResult> Create()
         {
             CreateProductVM productVM = new CreateProductVM
@@ -119,6 +123,7 @@ namespace Pronia.Areas.Admin.Controllers
             return View(productVM);
         }
         [HttpPost]
+
         public async Task<IActionResult> Update(int? id,UpdateProductVM productVM)
         {
             productVM.Categories = await _context.Categories.ToListAsync();
@@ -178,6 +183,7 @@ namespace Pronia.Areas.Admin.Controllers
 
 
         }
+     
         public async Task<IActionResult> Delete(int? id)
         {
             if (id is null || id <= 0)
