@@ -12,8 +12,8 @@ using Pronia.DAL;
 namespace Pronia.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250513035823_CreateIdentity")]
-    partial class CreateIdentity
+    [Migration("20250518032503_appUser")]
+    partial class appUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
